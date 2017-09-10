@@ -1,0 +1,59 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="carousel slide carousel-montere carousel-overlay toflip" id="carousel">
+    <div class="carousel-inner">
+        <div class="item active item-1">
+            <div class="carousel-caption text-center">
+                <h2>QUALITE ET SAVEUR <br>CUISINE LOCALE</h2>
+                <p>Le Local vous propose de découvrir les saveurs de la Côte d'Azur en cuisinant les meilleurs produits de saison.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="row-1 fluid-container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div id="qualitycycle-wrapper" class="half-block toflip">
+                <div class="inner pad90">
+                    <img src="{% static 'img/pineapple.png' %}" alt="icone">
+                    <h4><small> GARANTIE </small> PRODUITS FRAIS ET DE SAISON</h4>
+                    <p><a href="/carte" class="btn btn-light">EN SAVOIR PLUS</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div id="qualitymap-wrapper" class="half-block toflip">
+                <div class="inner pad90">
+                    <img src="{% static 'img/wine-menu.png' %}" alt="icone">
+                    <h4><small> TOUS LES MOIS </small> NOUVELLE CARTE</h4>
+                    <p><a href="/carte" class="btn btn-light">VOIR LA CARTE</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!-- /.row-1 -->
+<!--<section class="row-2 fluid-container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div id="recipes-wrapper" class="half-block toflip">
+                <div class="inner pad90">
+                    <img src="/assets/img/ico-recipes.png" alt="">
+                    <h4><small> TOUS LES JOURS </small> DES PRODUITS FRAIS ET DE SAISON</h4>
+                    <p><a href="/?cat=18&lang=en" class="btn btn-light">CONTINUE</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div id="journal-wrapper" class="half-block toflip">
+                <div class="inner pad90">
+                    <img src="/assets/img/ico-journal.png" alt="">
+                    <h4><small> LATEST </small> NEWS AND EVENTS</h4>
+                    <p><a href="/?cat=37&lang=en" class="btn btn-light">CONTINUE</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> --> <!-- /.row-2 -->
+{% endblock content %}
