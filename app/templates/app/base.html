@@ -9,7 +9,7 @@
     <meta name="description" content="Le Local, restaurant du quartier du Mourillon à Toulon proposant des plats locaux à base de produits frais." />
     <meta property="og:title" content="Le Local Restaurant" />
     <meta property="og:url" content="http://www.restaurant-lelocal.fr" />
-    <meta property="og:image" content="logo.png" />
+    <meta property="og:image" content="{% static 'img/logo.png' %}" />
     <meta property="og:site_name" content="Le Local" />
     <meta property="og:description" content="Le Local, restaurant du quartier du Mourillon à Toulon proposant des plats locaux à base de produits frais." />
     <meta itemprop="name" content="Le Local" />
@@ -28,6 +28,8 @@
   ga('send', 'pageview');
 
 </script>
+<script type="text/javascript" src="{% static 'js/instafeed.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/instafonction.js' %}"></script>
 </head>
 <body>
     <header id="header">
@@ -53,7 +55,7 @@
                             <span class="line">LA CARTE</span>
                         </a>
                     </li>
-                    <li class="divider"><img src="{% static 'img/logo.png' %}"></li>
+                    <li class="divider"><img src="{% static 'img/le local final.png' %}"></li>
                     <li>
                         <a href="/edito">
                             <span class="line">LE MOT DU CHEF</span>
@@ -70,22 +72,21 @@
      </header>
      {% block content %}
      {% endblock %}
+          <div id="instafeed">
+              <h1>Sur Instagram</h1>
+          </div>
      <footer id="footer" class="tofade">
       <div class="prima pad70">
-       <p><img src="{% static 'img/logo.png' %}" alt="Le Local"></p>
+       <p><img width= "350px" src="{% static 'img/le local final.png' %}" alt="Le Local"></p>
        <p>Restaurant à base de produits frais et locaux à Toulon<br>
          455 Littoral Frédéric Mistral 83000 Toulon - FRANCE - TEL. 04 94 20 61 32</p>
        <ul class="social_menu light">
-         <li class="facebook">
            <a href="http://www.facebook.com/RestaurantLeLocal" target="_blank">
-             <span class="inner">facebook</span>
+             <img src="{% static 'img/facebook.png' %}" alt="Facebook">
            </a>
-         </li>
-         <li class="instagram">
            <a href="http://instagram.com/lelocal" target="_blank">
-             <span class="inner">instagram</span>
+             <img src="{% static 'img/instagram.png' %}" alt="Instagram">
            </a>
-         </li>
        </ul>
      </div>
      <div class="seconda pad50">

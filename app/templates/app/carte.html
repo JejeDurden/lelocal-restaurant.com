@@ -20,14 +20,17 @@
          <p class="page-intro">Entrée + Plat + Dessert</p>
          <p class="page-intro">29€</p></div>
            <h2>LES <b>ENTRÉES</b></h2>
-           <div class="dotted-border"><h3>Asperges vertes de Provence<br><small>Couteaux à l'estragon, poire et agrumes comme une vierge</small></h3></div>
-           <div class="dotted-border"><h3>Rillettes de sardines fraîches<br><small>Purée d'avocats, chou rave, pomme granny et mayonnaise à la vanille bourbon</small></h3></div>
+           {% for entree in entree %}
+            <div class="dotted-border"><h3>{{ entree.principal }}<br><small>{{ entree.accompagnement }}</small></h3></div>
+           {% endfor %}
            <h2>LES <b>PLATS</b></h2>
-           <div class="dotted-border"><h3>Pavé de cabillaud<br><small>Palets de pommes, crème de fenouil et bouillon de roche</small></h3></div>
-           <div class="dotted-border"><h3>Filet de cochon fermier<br><small>Purée de pois chiches, pop corn au piment d'espelette</small></h3></div>
+           {% for plat in plat %}
+            <div class="dotted-border"><h3>{{ plat.principal }}<br><small>{{ plat.accompagnement }}</small></h3></div>
+           {% endfor %}
            <h2>LES <b>DESSERTS</b></h2>
-           <div class="dotted-border"><h3>Crémeux Andoa noir 70%<br><small>Ganache Andoa lacté/banane, Streusel fleur de sel et espuma banane</small></h3></div>
-           <div class="dotted-border"><h3>Poires pochées au vin épicé<br><small>Suprêmes de pamplemousse, biscuit madeleine et espuma fleur d'oranger</small></h3></div>
+           {% for dessert in dessert %}
+            <div class="dotted-border"><h3>{{ dessert.principal }}<br><small>{{ dessert.accompagnement }}</small></h3></div>
+           {% endfor %}
 
 <br><br><br>
 </div>
