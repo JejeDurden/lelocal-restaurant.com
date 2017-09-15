@@ -1,0 +1,29 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_DB: lelocal
+  web:
+    restart: always
+    build: .
+    expose:
+      - "8000"
+    environment:
+      HELLO_POSTGRES_DB_HOST: db
+    volumes:
+      - ./static:/website/static
+    command: gunicorn lelocal.wsgi:application --bind :8000
+    depends_on:
+      - db
+  nginx:
+    restart: always
+    build: ./config/nginx/
+    ports:
+      - "8050:8050"
+    links:
+      - web:web
+    volumes:
+      - ./static:/website/static
+    depends_on:
+      - web
