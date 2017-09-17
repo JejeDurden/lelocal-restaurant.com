@@ -1,7 +1,8 @@
-FROM python:3.6.1
+FROM python:3
 ENV PYTHONUNBUFFERED 1
-RUN mkdir /config
-ADD /config/requirements.pip /config/
-RUN pip install -r /config/requirements.pip
-RUN mkdir /src;
-WORKDIR /src
+RUN mkdir /code
+WORKDIR /code
+ADD requirements.txt /code/
+RUN pip install -r requirements.txt
+ADD website /code/
+ADD . /code/
