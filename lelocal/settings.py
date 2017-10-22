@@ -75,7 +75,7 @@ DATABASES = {
     'default': {
         dj_database_url.config(
         default=config('DATABASE_URL')
-    }
+    )
 }
 
 # Update database configuration with $DATABASE_URL.
