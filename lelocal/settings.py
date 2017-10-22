@@ -21,8 +21,10 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('SECRET_KEY')
-DEBUG = config('DEBUG', default=False, cast=bool)
+SECRET_KEY = 'qjdg_@2eiiw3ul9qi+#nk*+mgzcx1ec8ra4t^6*um22+zfb!hv'
+
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = False
 
 # Application definition
 
@@ -73,9 +75,10 @@ WSGI_APPLICATION = 'lelocal.wsgi.application'
 
 DATABASES = {
     'default': {
-        dj_database_url.config(
-        default=config('DATABASE_URL')
-        )
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PORT': 5432,
     }
 }
 
