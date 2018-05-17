@@ -4,6 +4,7 @@ dj-database-url==0.4.2
 Django==1.11.6
 flake8==3.4.1
 gunicorn==19.7.1
+django-heroku==0.3.1
 idna==2.6
 mccabe==0.6.1
 pew==1.1.0
