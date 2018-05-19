@@ -3953,6 +3953,10 @@ a.thumbnail:focus,a.thumbnail:hover {
 a.list-group-item {
 	color:#555
 }
+.item-1 {
+	height: 100%;
+	width: 100%;
+}
 a.list-group-item .list-group-item-heading {
 	color:#232327
 }
