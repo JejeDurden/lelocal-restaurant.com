@@ -76,7 +76,9 @@ WSGI_APPLICATION = 'lelocal.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-DATABASES = {}
+DATABASES = {
+    'default': {}
+}
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
 
