@@ -8453,7 +8453,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 	opacity:.1
 }
 #myVideo {
-	height: 100%;
+	height: auto;
 	width: 100%;
 }
 .half-block {
