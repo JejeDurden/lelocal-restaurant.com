@@ -8527,6 +8527,52 @@ h3.page-title small {
 	text-align:center;
 	font-size:18px
 }
+.mini-title {
+	padding:30px 0;
+	text-align:center
+}
+.mini-title h4 {
+	font-family:'Lato', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight:400;
+	margin-top:10px;
+	font-size:12px;
+	text-transform:uppercase;
+	letter-spacing:3px;
+	color:#232327;
+	background:url(../img/spacer-10x1-viola.png) repeat-x center center;
+	margin-top:0
+}
+.mini-title h4 span {
+	background:#e5e8d8;
+	padding:0 30px;
+	display:inline-block
+}
+.narra-block.hero {
+	background-color:#232327
+}
+.narra-block.hero h3.page-title {
+	background:url(../img/spacer-40x2-white.png) no-repeat bottom center
+}
+.narra-block.hero h3,.narra-block.hero p {
+	color:#e5e8d8
+}
+.narra-block {
+	padding:250px 0 260px
+}
+.narra-block p {
+	text-align:center
+}
+.img-block {
+	height:90%;
+	width:100%;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-repeat:repeat;
+	background-position:50% 50%;
+	background-attachment:fixed
+}
 
 .grid-item .inner {
 	padding:20px 0
