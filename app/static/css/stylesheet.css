@@ -8447,6 +8447,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 #myVideo {
 	height: 100%;
+	width: 100%;
 }
 .half-block {
 	text-align:center;
