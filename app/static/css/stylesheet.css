@@ -8296,26 +8296,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 	width:25px;
 	height:25px
 }
-#section_nav_wrapper #section_nav li a {
-	transition-property:all;
-	transition-duration:.2s;
-	-webkit-transition-property:all;
-	-webkit-transition-duration:.2s;
-	width:25px;
-	height:25px;
-	display:block;
-	text-decoration:none;
-	background:url(../img/dot-25.png) no-repeat center center;
-	background:url(../img/square-25.png) no-repeat center center
-}
-#section_nav_wrapper #section_nav li a:hover {
-	background:url(../img/dot-empty-25.png) no-repeat center center;
-	background:url(../img/square-empty-25.png) no-repeat center center
-}
-#section_nav_wrapper #section_nav .active a {
-	background:url(../img/dot-empty-25.png) no-repeat center left;
-	background:url(../img/square-empty-25.png) no-repeat center center
-}
+
 .tooltip-inner {
 	white-space:nowrap;
 	line-height:1;
@@ -8464,26 +8445,8 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 	background:-ms-linear-gradient(top,rgba(255,255,255,0) 0,rgba(0,0,0,0) 1%,rgba(0,0,0,.07) 26%,rgba(0,0,0,.5) 71%,rgba(0,0,0,.7) 100%);
 	opacity:.1
 }
-.item-1 {
-	background:url('../img/PL-Studio-9.jpg') no-repeat center center
-}
-.item-2 {
-	background:url(../img/sliderhome/SIL_4615.jpg) no-repeat center center
-}
-.item-3 {
-	background:url(../img/sliderhome/SIL_4890.jpg) no-repeat center center
-}
-.item-4 {
-	background:url(../img/sliderhome/SIL_4605.jpg) no-repeat center center
-}
-.item-5 {
-	background:url(../img/sliderhome/MAT_0719.jpg) no-repeat center center
-}
-.item-6 {
-	background:url(../img/sliderhome/MAT_0535.jpg) no-repeat center center
-}
-.item-7 {
-	background:url(../img/sliderhome/MAT_0483.jpg) no-repeat center center
+#myVideo {
+	height: 100%;
 }
 .half-block {
 	text-align:center;
@@ -8563,52 +8526,6 @@ h3.page-title small {
 .page-intro {
 	text-align:center;
 	font-size:18px
-}
-.mini-title {
-	padding:30px 0;
-	text-align:center
-}
-.mini-title h4 {
-	font-family:'Lato', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight:400;
-	margin-top:10px;
-	font-size:12px;
-	text-transform:uppercase;
-	letter-spacing:3px;
-	color:#232327;
-	background:url(../img/spacer-10x1-viola.png) repeat-x center center;
-	margin-top:0
-}
-.mini-title h4 span {
-	background:#e5e8d8;
-	padding:0 30px;
-	display:inline-block
-}
-.narra-block.hero {
-	background-color:#232327
-}
-.narra-block.hero h3.page-title {
-	background:url(../img/spacer-40x2-white.png) no-repeat bottom center
-}
-.narra-block.hero h3,.narra-block.hero p {
-	color:#e5e8d8
-}
-.narra-block {
-	padding:250px 0 260px
-}
-.narra-block p {
-	text-align:center
-}
-.img-block {
-	height:90%;
-	width:100%;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	background-size:cover;
-	background-repeat:repeat;
-	background-position:50% 50%;
-	background-attachment:fixed
 }
 
 .grid-item .inner {
