@@ -115,7 +115,7 @@ USE_TZ = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Allow all host headers
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', 'restaurant-lelocal.fr', 'lelocal-restaurant.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', 'www.restaurant-lelocal.fr', 'lelocal-restaurant.herokuapp.com']
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
