@@ -27,7 +27,7 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 SECRET_KEY = 'qjdg_@2eiiw3ul9qi+#nk*+mgzcx1ec8ra4t^6*um22+zfb!hv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # Application definition
 
@@ -123,7 +123,7 @@ ALLOWED_HOSTS = ['*']
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
-STATIC_URL = '/static/'
+STATIC_URL = '/staticfiles/'
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
