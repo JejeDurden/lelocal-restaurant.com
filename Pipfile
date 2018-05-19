@@ -7,9 +7,9 @@ name = "pypi"
 
 [packages]
 
-django = "<2.0,>=1.8"
-gunicorn = "==19.7.1"
-"psycopg2" = "==2.7.1"
+django = "*"
+gunicorn = "*"
+"psycopg2" = "*"
 whitenoise = "*"
 dj-database-url = "*"
 django-heroku = "*"
