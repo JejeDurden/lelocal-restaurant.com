@@ -4595,6 +4595,9 @@ button.close {
 	height:auto;
 	line-height:1
 }
+#carousel {
+	width: 100%;
+}
 .carousel-inner>.active,.carousel-inner>.next,.carousel-inner>.prev {
 	display:block
 }
