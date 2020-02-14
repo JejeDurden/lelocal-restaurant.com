@@ -77,7 +77,14 @@ WSGI_APPLICATION = 'lelocal.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DATABASES = {
-    'default': {}
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "lelocal",
+        "USER": "lelocal",
+        "PASSWORD": "test",
+        "HOST": "localhost",
+        "PORT": "",
+    }
 }
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
@@ -137,4 +144,3 @@ django_heroku.settings(locals())
 import dj_database_url
 db_from_env = dj_database_url.config(default=os.getenv('DATABASE_URL'), conn_max_age=500)
 DATABASES['default'].update(db_from_env)
-
